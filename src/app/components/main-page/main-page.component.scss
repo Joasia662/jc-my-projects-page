@@ -17,19 +17,70 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     scroll-snap-align: start end; 
 }
 
 .container{
-    scroll-snap-type: y mandatory;
+   scroll-snap-type: y mandatory;
    overflow-y: scroll;
    height: 100vh;
 }
 
-.one {
-    background-color: #252623;
+.main-page {
+    background-image: url("../../../assets/main-page.svg");
+    background-size: cover;
+    height: 100hv;
+    color: white;
+    &-title{
+        font-size: 85px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    &-subtitle{
+        font-size: 35px;
+        margin-top: 50px;
+        font-weight: lighter;
+        display: flex;
+        justify-content: center;
+    }
+    &-icons{
+        margin-top: 80px;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+    }
 }
+
+fa-icon, .icon{
+    color: black;
+    background-color: white;
+    margin: 30px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+.project-cad{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    &-title{
+        font-size: 85px;
+        margin-left: 30px !important;
+    }
+    &-image{
+        height: 80vh;
+        float:right;
+        margin-right:50px;
+        clear:both;
+    }
+}
+
 .two{
     background-color: #DECC00;
     height: 50hv !important;
